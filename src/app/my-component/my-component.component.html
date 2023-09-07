@@ -1,0 +1,6 @@
+<p>Olá, meu componente</p>
+
+<li *ngFor="let product of productsList$ | async">
+    {{product.strDrink}}
+</li>
+<app-second-component [myProp]="nomeVariavel" (newItemEvent)="handleEvent($event)"></app-second-component>
